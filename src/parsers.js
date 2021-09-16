@@ -72,6 +72,9 @@ export default {
   delimiter: function (data) {
     return "<br />";
   },
+  simulator: function (data) {
+    return "<Simulator />";
+  },
 
   embed: function (data, config) {
     if (config.embed.useProvidedLength) {
