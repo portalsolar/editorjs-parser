@@ -112,6 +112,9 @@ var edjsParser = function () {
     simulator: function simulator(data) {
       return "<Simulator />";
     },
+    ctaButton: function ctaButton(data) {
+      return "<ctaButton />";
+    },
     embed: function embed(data, config) {
       if (config.embed.useProvidedLength) {
         data.length = "width=\"".concat(data.width, "\" height=\"").concat(data.height, "\"");

@@ -75,6 +75,9 @@ export default {
   simulator: function (data) {
     return "<Simulator />";
   },
+  ctaButton: function (data) {
+    return "<ctaButton />";
+  },
 
   embed: function (data, config) {
     if (config.embed.useProvidedLength) {
