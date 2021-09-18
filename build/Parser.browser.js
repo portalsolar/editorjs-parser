@@ -110,10 +110,10 @@ var edjsParser = function () {
       return "<br />";
     },
     simulator: function simulator(data) {
-      return "<Simulator />";
+      return "<simulator> </simulator>";
     },
     ctaButton: function ctaButton(data) {
-      return "<ctaButton />";
+      return "<ctaButton> </ctaButton>";
     },
     embed: function embed(data, config) {
       if (config.embed.useProvidedLength) {

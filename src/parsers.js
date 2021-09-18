@@ -73,10 +73,10 @@ export default {
     return "<br />";
   },
   simulator: function (data) {
-    return "<Simulator />";
+    return "<simulator> </simulator>";
   },
   ctaButton: function (data) {
-    return "<ctaButton />";
+    return "<ctaButton> </ctaButton>";
   },
 
   embed: function (data, config) {
