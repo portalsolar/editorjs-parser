@@ -115,6 +115,12 @@ var defaultParsers = {
   delimiter: function (data) {
     return "<br />";
   },
+  simulator: function (data) {
+    return "<simulator> </simulator>";
+  },
+  ctaButton: function (data) {
+    return "<ctaButton> </ctaButton>";
+  },
 
   embed: function (data, config) {
     if (config.embed.useProvidedLength) {
