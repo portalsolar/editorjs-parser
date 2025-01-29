@@ -121,7 +121,19 @@ var defaultParsers = {
   ctaButton: function (data) {
     return "<ctaButton> </ctaButton>";
   },
+  customButton: function customButton(data) {
+    const buttonClass = 'px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600';
 
+    return `
+        <div style="text-align: ${data.align || 'center'};">
+            <button class="${buttonClass}">
+                <a href="${data.link || '#'}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">
+                    ${data.title || 'Botão'}
+                </a>
+            </button>
+        </div>
+    `;
+  },
   embed: function (data, config) {
     if (config.embed.useProvidedLength) {
       data.length = `width="${data.width}" height="${data.height}"`;
