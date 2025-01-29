@@ -122,17 +122,7 @@ var defaultParsers = {
     return "<ctaButton> </ctaButton>";
   },
   customButton: function customButton(data) {
-    const buttonClass = 'px-6 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black rounded-full font-semibold text-lg uppercase transition duration-150 ease-in-out';
-
-    return `
-        <div style="text-align: ${data.align || 'center'};">
-            <button class="${buttonClass}" style="height: 40px; letter-spacing: 1.2px; line-height: 24px; padding-left: 24px; padding-right: 24px; cursor: pointer; border: none; box-sizing: border-box;">
-                <a href="${data.link || '#'}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">
-                    ${data.title || 'Botão'}
-                </a>
-            </button>
-        </div>
-    `;
+    return `<customButton align="${data.align || 'center'}" link="${data.link || '#'}" title="${data.title || 'Botão'}"> </customButton>`;
   },
   embed: function (data, config) {
     if (config.embed.useProvidedLength) {
