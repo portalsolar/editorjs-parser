@@ -122,7 +122,7 @@ var defaultParsers = {
     return "<ctaButton> </ctaButton>";
   },
   customButton: function customButton(data) {
-    return `<customButton align="${data.align || 'center'}" link="${data.link || '#'}" title="${data.title || 'Botão'}"> </customButton>`;
+    return `<customButton align="${data.align || 'center'}" link="${data.link || '#'}" title="${data.title || 'Botão'}" target="${data.target || '_blank'}"> </customButton>`;
   },
   embed: function (data, config) {
     if (config.embed.useProvidedLength) {
